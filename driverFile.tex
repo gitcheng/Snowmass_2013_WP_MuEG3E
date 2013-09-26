@@ -11,6 +11,16 @@
 \usepackage{graphicx}
 \usepackage{hyperref}      % hypertext links %%ARXIV
 
+
+\textwidth 6.5in      % 1 in = 2.54 cm = 72.27 pt; 1 cm = 28.45 pt
+\textheight 9.0in     % Top to end of text; page number not included
+\oddsidemargin 0.0in 
+%\evensidemargin 0.5in 
+\topmargin -0.5in 
+\topskip 0pt \footskip 20pt
+\renewcommand\textfraction{0.0}
+
+
 \input workshopsymbols.tex      %   standard macros for common HEP terms
 
 \def\babar{\mbox{\sl B\hspace{-0.4em} {\small\sl A}\hspace{-0.37em} \sl B\hspace{-0.4em} {\small\sl A\hspace{-0.02em}R}}}
@@ -39,6 +49,10 @@ a similar design for $\mu\to eee$ ...
 \end{abstract}
 
 \input introduction.tex
+
+\input mutoegamma.tex
+
+\input mutoeee.tex
 
 \input bibliography.tex
 
