@@ -114,8 +114,8 @@ goal of the MEG upgrade.
 \centering
 \includegraphics[width=0.49\textwidth]{Figures/egamma-resol-fit2b.pdf}
 \includegraphics[width=0.49\textwidth]{Figures/mumass-resol-fit2b.pdf}
-\caption{\label{fig:eresol} Photon energy resolution and $e\gamma$ invariant
-mass resolution. Fitted curve is a double-Gaussian distribution.}
+\caption{\label{fig:eresol} Photon energy and $e\gamma$ invariant
+mass distributions. Fitted curve is a double-Gaussian distribution.}
 \end{figure}
 
 
@@ -148,8 +148,9 @@ total DAQ time, phase space factors, and the reconstruction and selection
 efficiencies. For the RMD background, the scaling factor is $R_\mu$, instead of
 $R_\mu^2$.
 
-The momenta 
-of the $e^+$ and $\gamma$ are smeared according to the FastSim study. 
+The energies and directions
+of the $e^+$ and $\gamma$ are smeared according to the FastSim study
+using double-Gaussian functions.
 We study the scenarios with timing resolutions of 50~ps and 100~ps. 
 The MEG experiment uses 5 independent variables $E_\gamma$, $p_e$, 
 $\phi_{e\gamma}$, $\theta_{e\gamma}$, and $\Delta t_{e\gamma}$, to construct
@@ -178,10 +179,12 @@ no signal events are present.
 Figure~\ref{fig:muegamma-sensitivity} shows the background levels, 
 signal efficiency, and 90\%
 C.L. sensitivity under various selection cuts for 
-$R_\mu=1\times 10^{9}$~muons/s, 50 ps resolution on $t_{e\gamma}$, for
-an integrated DAQ time of 1.5 years, as well as the sensitivity reach
-as a function of integrated DAQ time for both 50 ps and 100 ps timing
-resolutions. 
+$R_\mu=1\times 10^{9}$~muons/s, and 50-ps resolution on $t_{e\gamma}$.
+A sensitivity of $B(\mu^+\to e^+\gamma)<1.6\times 10^{-14}$ could be reached
+with an integrated DAQ time of 1.5 years.
+The sensitivity reach
+as a function of integrated DAQ time for both 50-ps and 100-ps timing
+resolutions is also shown.
 
 Increasing the muon rate further could improve the sensitivity. However,
 the sensitivity quickly moves away from the ${\cal O}(1)$ background regime, because the accidental
@@ -210,8 +213,8 @@ resolution.
    \centering
    \includegraphics[width=0.48\textwidth]{Figures/muegamma-sens-1e9-1p5y-50ps.pdf} 
    \includegraphics[width=0.48\textwidth]{Figures/muegamma-sens-years-1e9-2.pdf} 
-   \caption{Left: $B(\mu^+\to e^+\gamma)$ sensitivity optimzation. 
-Best sensitivity is $1.6\times 10^{-14}$. Right: sensitivity as a function of integrated DAQ time for both 50 ps and 100 ps $t_{e\gamma}$ resolutions.}
+   \caption{Left: $B(\mu^+\to e^+\gamma)$ sensitivity optimzation for a given
+scenario (see text). Right: sensitivity as a function of integrated DAQ time for both 50-ps and 100-ps $t_{e\gamma}$ resolutions.}
    \label{fig:muegamma-sensitivity}
 \end{figure}
 
