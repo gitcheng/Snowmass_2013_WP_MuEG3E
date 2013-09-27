@@ -49,11 +49,21 @@ We have conducted an initial study of this concept using a fast simulation
 tool (FastSim) originally developed for the Super$B$ experiment~\cite{SuperB}
 using the \babar\
 software framework and analysis tools. FastSim allows us to model detector 
-components as two-dimensional shells of simple geometries. Particle scattering,
-energy loss, secondary particle production (due to Compton scattering, 
-Bremsstrahlung, conversion, EM or hadron showers, {\it etc.}) are simulated at the
-intersection of particles with detector shells. Tracks are reconstructed with
-a Kalman filter into piece-wise trajectories.
+components as two-dimensional shells of simple geometries such as cylinders,
+cones, disks, and planes. The effect of physical thickness is modeled
+parameterically. Coulomb scattering and ionization energy loss are modeled
+with the standard parameterization in terms of radiation length and particle
+momentum and velocity. Bremsstrahlung and pair production are modeled by
+simplified cross-sections. Tracking measurements are described in terms of
+the single-hit and two-hit resolution, and the efficiency. Silicon strip
+detectors are modeled as two independent orthogonal projections. 
+FastSim reconstructs high-level detector objects from simulated hits and
+energy deposits using the simulation truth to associate detector objeccts,
+bypassing pattern recognition. Errors associated with pattern recognition are
+introduced by perturbing the truth-based association, using models based on
+\babar\ pattern recognition algorithm performance. The final set of hits on
+associated with a track is passed to the \babar\ Kalman filter track fitting
+algorithm to obtain reconstructed track parameters.
 
 The FastSim model in this study consists of a thin aluminum stopping target 
 and a six-layer
@@ -64,7 +74,12 @@ long, 5 mm in radius, and 50 $\mu$m thick. Two silicon detector cylinders are
 placed close the target for better vertexing resolution; two layers are placed
 just outside the Pb converter, and two layers a few cm away. The layout is shown
 in Fig.\ref{fig:detscheme}; a signal event display is shown in 
-Fig.~\ref{fig:evtdisplay}. The entire detector is placed in a 1T solenoidal
+Fig.~\ref{fig:evtdisplay}. The silicon detector is modeled after Super$B$ 
+inner silicon striplet modules but thinner. Each layer is formed of 50 $\mu$m thick 
+double-sided striplets silicon sensors mounted on 50 $\mu$m of kapton. 
+The hit spatial resolution is modeled as a sum of two components with resolutions
+of 8 $\mu$m and 20 $\mu$m, and a hit efficiency of 90\%.
+The entire detector is placed in a 1T solenoidal
 magnetic field.
 
 
